@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Comprensión Lectora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="titleInit">Test Número 12</Nav></h2>
+        <p id="paragraphInit">
+            Este test busca medir tu velocidad y comprensión
+            lectora.<br>
+            Te recomendamos que lo hagas en un ambiente
+            calmado, sin distracciones y con buena iluminación.<br>
+            Esta lectura la debes hacer basado en las técnicas
+            que ya hayas empezado a usar. En las primeras
+            semanas, no debes preocuparte mucho por la
+            comprensión lectora, ya que ese es un proceso que se
+            va a ir dando paulatinamente.<br>
+            Cuando des clic en INICIAR se te presentará la lectura
+            y el sistema llevará un cronómetro que medirá tu
+            velocidad. Al finalzar de leer todo el texto debes dar
+            clic en el botón TERMINAR.<br>
+        </p>
+        <button id="startButton">Iniciar</button>
+        <div id="textContainer" class="hidden">
+            <p id="textToRead">
+                El mundo da muchas vueltas
+                <br><br>
+                En un reino muy lejano, llamado el País de la Alegría, vivía un hombre muy rico y muy avaro llamado Jeremías, quien desde hacía un tiempo buscaba un empleado para que le ayudara en su granja.
+                <br><br>
+                El rumor se había difundido y pronto la fila de hombres en espera de una oportunidad laboral era interminable, pero como lo último que se pierde es la esperanza, nuestro amigo José Antonio se dispuso a ser parte de ella. La fama del dueño de esta granja era muy nombrada; por lo que muchos temían trabajar para él, aun así se encontraban allí, porque la pobreza azotaba este reino y las oportunidades escaseaban.
+                <br><br>
+                Muchos jóvenes entraron y se entrevistaron con Don Jeremías, solo uno, tuvo la paciencia y el buen humor de soportarlo todo. Al siguiente día empezó a trabajar en la granja, a pesar de no tener el mejor sueldo, ni el mejor trato, José Antonio era un hombre muy ahorrativo y visionario, que no se dejaba vencer por cualquier obstáculo. Todo esto ayudó para que su patrón le confiara muchos secretos, que le proporcionarían muchos beneficios más adelante.
+                <br><br>
+                El joven supo emplear muy bien los conocimientos adquiridos y contaba con el aprecio de todos los clientes de las verdulerías, que sabían lo buen empleado, lo honesto, amable y generoso que era, todos querían comprarle las frutas y verduras que él vendía. Lo mismo, no opinaban de nuestro granjero y Dueño, quien tenía un genio terrible y quien además era muy tacaño y mala persona, pues él no les permitía llevar ni un tomate a casa, ni siquiera porque ellos le ayudaban a sembrarlos.
+                <br><br>
+                Esta tierra era muy prospera, pero a don Jeremías no le importaban los demás, solo pensaba en su propio bienestar, si las personas a su alrededor no tenían buena comida o buen vestido a él no le preocupaba, nunca valoraba a sus empleados, ni valoraba su trabajo.
+                <br><br>
+                Pasado algún tiempo, debido a algunos malos negocios y a su necedad, el Granjero millonario se quedó en la ruina. Ya no podría presumir de sus riquezas, ni ser el hombre prepotente que daba órdenes, ahora tendría que hacer lo que nunca se imaginó, que tendría que hacer… Pedir trabajo.
+                <br><br>
+                Después de ser el amo y señor, tendría que hacer la fila como cualquier persona, las burlas y las miradas con desprecio no se hicieron esperar, él se sintió humillado y despreciado y recordó cuanto mal había hecho, por lo que elevó su mirada al cielo y le pidió perdón a Dios, por lo mal patrón y mala persona que había sido.
+                <br><br>
+                A pesar de todo el nuevo dueño de esta Granja le dio la oportunidad de trabajar y generosamente le brindó comida y techo, para que pasase la noche en este lugar. El asombro de Don Jeremías fue grande, cuando descubrió que su antiguo empleado José Antonio ahora tenía muchas tierras, incluyendo la granja que un día había sido de él.
+                <br><br>
+                Y como la naturaleza es sabia no olvidemos que: -"Cuando un oso hormiguero está vivo se come a las hormigas, pero cuando este muere, son las hormigas las que se lo comen a él".
+                <br><br>
+                El mundo da muchas vueltas, por eso no tenemos que menospreciar a nadie, ni subestimar a los demás, pues nunca sabemos cuándo necesitaremos de ellos.
+                <br><br>
+                https://www.encuentos.com/cuentos-con-moraleja/el-mundo-da-muchas-vueltas/ -escritora Bibiana Emilia Posso - 553 palabras
+            </p>                       
+                   
+            <div id="timer">Tiempo transcurrido: <span id="timerValue">0</span> segundos</div>
+            <button id="finishButton">Terminar</button>
+        </div>
+        <div id="questionnaire" class="hidden">
+            <h2>Test de Comprensión Lectora</h2>
+            <form id="quizForm">
+                <ol id="questionList">
+                    <!-- Las preguntas se añadirán aquí dinámicamente con JavaScript -->
+                </ol>
+                <button type="submit">Terminar</button>
+            </form>
+        </div>
+        <div id="results" class="hidden">
+            <h2>Resultados</h2>
+            <div id="wordCount">Palabras leídas: <span id="wordCountValue"></span></div>
+            <div id="readingSpeed">Velocidad de lectura: <span id="readingSpeedValue"></span> palabras por minuto</div>
+            <div id="comprehension">Comprensión lectora: <span id="comprehensionValue"></span>%</div>
+            <div id="timeResult">Tiempo transcurrido: <span id="timeResultValue"></span> segundos</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
